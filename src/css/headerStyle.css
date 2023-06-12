@@ -1,0 +1,102 @@
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 3px;
+
+  border-color: #d92222;
+  background-color: #262626;
+
+  aspect-ratio: 1/1;
+  padding: 9px;
+  border-radius: 50%;
+
+  transition: all 0.3s;
+}
+
+.logo img {
+  width: 64px;
+}
+
+.logo:hover {
+  border-radius: 25%;
+}
+
+body {
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100wh;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.general_text {
+  text-decoration: none;
+  color: #262626;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#golovna:hover {
+  color: #d92222;
+}
+
+#golovna:hover > #line_golovna {
+  width: 100%;
+  border-color: #d92222;
+  visibility: visible;
+}
+
+#produkt:hover {
+  color: #d92222;
+}
+
+#produkt:hover > #line_produkt {
+  width: 100%;
+  border-color: #d92222;
+  visibility: visible;
+}
+
+#poslugy:hover {
+  color: #d92222;
+}
+
+#poslugy:hover > #line_poslugy {
+  width: 100%;
+  border-color: #d92222;
+  visibility: visible;
+}
+
+#kontakty:hover {
+  color: #d92222;
+}
+
+#kontakty:hover > #line_kontakty {
+  width: 100%;
+  border-color: #d92222;
+  visibility: visible;
+}
+
+line {
+  border: #dde6ed solid 2px;
+  width: 0px;
+  visibility: hidden;
+  transition: all 0.3s;
+}
