@@ -97,13 +97,11 @@ body {
 @media screen and (max-width: 1024px) {
   .loading_screen
   {
-    weight: 100vh;
     height: 100vh;
   }
   body {
     overflow: scroll;
     height: 100vh;
-    weight: 100vh;
   }
   .content-box {
     min-height: 335px;
