@@ -89,14 +89,18 @@ body {
   grid-area: d;
   background-color: #b2f042;
 }
+.content-box {
+  box-sizing: border-box;
+  padding: 15px;
+}
 
 .content-handler .content-box {
   border-radius: 30px;
+  object-position: right bottom;
 }
 
 @media screen and (max-width: 1024px) {
-  .loading_screen
-  {
+  .loading_screen {
     height: 100vh;
   }
   body {
@@ -116,4 +120,37 @@ body {
       " c "
       " d ";
   }
+}
+
+@media screen and (max-width: 1024px) {
+  .loading_screen {
+    height: 100vh;
+  }
+  body {
+    overflow: scroll;
+    height: 100vh;
+  }
+  .content-box {
+    min-height: 335px;
+  }
+  .content-handler {
+    row-gap: 15px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      " a "
+      " b "
+      " c "
+      " d ";
+  }
+}
+
+.read_more_button {
+  text-decoration: none;
+  color: #ff0000;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 25px;
+  display: flex;
+  justify-content: flex-end;
 }

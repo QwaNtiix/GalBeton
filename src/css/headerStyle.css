@@ -9,18 +9,18 @@
   background-color: #262626;
 
   aspect-ratio: 1/1;
-  padding: 9px;
-  border-radius: 50%;
+  padding: 17px;
+  border-radius: 30px;
 
   transition: all 0.3s;
 }
 
 .logo img {
-  width: 64px;
+  width: 106px;
 }
 
 .logo:hover {
-  border-radius: 25%;
+  border-radius: 50%;
 }
 
 body {
@@ -30,7 +30,7 @@ body {
   padding: 2%;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 50px;
   width: 100wh;
   height: 100vh;
   overflow: hidden;
@@ -39,7 +39,7 @@ body {
 .header {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 40px;
   flex-wrap: wrap;
 }
 
@@ -47,10 +47,11 @@ body {
   text-decoration: none;
   color: #262626;
   font-family: Roboto;
-  font-weight: 700;
-  font-size: 20px;
+  font-weight: 800;
+  font-size: 27px;
   display: flex;
   flex-direction: column;
+  margin-left: 40px;
 }
 
 #golovna:hover {
@@ -94,8 +95,12 @@ body {
 }
 
 line {
+  margin-top: 3px;
   border: #dde6ed solid 2px;
   width: 0px;
   visibility: hidden;
   transition: all 0.3s;
+}
+
+@media screen(:864px) {
 }
