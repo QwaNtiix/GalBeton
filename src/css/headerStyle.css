@@ -19,9 +19,7 @@
   width: 106px;
 }
 
-.logo:hover {
-  border-radius: 50%;
-}
+
 
 body {
   box-sizing: border-box;
@@ -51,47 +49,10 @@ body {
   font-size: 27px;
   display: flex;
   flex-direction: column;
-  margin-left: 40px;
 }
-
-#golovna:hover {
-  color: #d92222;
-}
-
-#golovna:hover > #line_golovna {
-  width: 100%;
-  border-color: #d92222;
-  visibility: visible;
-}
-
-#produkt:hover {
-  color: #d92222;
-}
-
-#produkt:hover > #line_produkt {
-  width: 100%;
-  border-color: #d92222;
-  visibility: visible;
-}
-
-#poslugy:hover {
-  color: #d92222;
-}
-
-#poslugy:hover > #line_poslugy {
-  width: 100%;
-  border-color: #d92222;
-  visibility: visible;
-}
-
-#kontakty:hover {
-  color: #d92222;
-}
-
-#kontakty:hover > #line_kontakty {
-  width: 100%;
-  border-color: #d92222;
-  visibility: visible;
+.main-header-content {
+  display: flex;
+  gap: 40px;
 }
 
 line {
@@ -102,5 +63,74 @@ line {
   transition: all 0.3s;
 }
 
-@media screen(:864px) {
+
+
+
+
+@media (pointer: fine) {
+  @media (max-width: 864px) {
+    .main-header-content {
+      display: none;
+    }
+    .logo {
+      border-radius: 70%;
+    }
+    .logo:hover {
+      border-radius: 25%;
+    }
+  }
+  .logo:hover {
+    border-radius: 50%;
+  }
+
+  #golovna:hover {
+    color: #d92222;
+  }
+  
+  #golovna:hover > #line_golovna {
+    width: 100%;
+    border-color: #d92222;
+    visibility: visible;
+  }
+  
+  #produkt:hover {
+    color: #d92222;
+  }
+  
+  #produkt:hover > #line_produkt {
+    width: 100%;
+    border-color: #d92222;
+    visibility: visible;
+  }
+  
+  #poslugy:hover {
+    color: #d92222;
+  }
+  
+  #poslugy:hover > #line_poslugy {
+    width: 100%;
+    border-color: #d92222;
+    visibility: visible;
+  }
+  
+  #kontakty:hover {
+    color: #d92222;
+  }
+  
+  #kontakty:hover > #line_kontakty {
+    width: 100%;
+    border-color: #d92222;
+    visibility: visible;
+  }
+}
+
+@media (pointer: coarse) {
+  @media (max-width: 864px) {
+    .main-header-content {
+      display: none;
+    }
+    .logo {
+      border-radius: 50%;
+    }
+  }
 }
